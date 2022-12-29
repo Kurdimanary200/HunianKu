@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Register">
+
+    <!-- logo -->
+    <View
+        android:id="@+id/rumah_logo"
+        android:layout_width="130dp"
+        android:layout_height="90dp"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/logo" />
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Daftar"
+        android:textSize="35dp"
+        android:textColor="#36455A"
+        android:textStyle="bold"/>
+
+    <!-- Title Username -->
+    <TextView
+        android:id="@+id/txtusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="20dp"
+        android:text="Username"
+        android:textSize="15dp" />
+
+    <!-- EditText Username -->
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <!-- Title Password -->
+    <TextView
+        android:id="@+id/txtpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="30dp"
+        android:text="Password"
+        android:textSize="15dp" />
+
+    <!-- Untuk Menampilkan Hide Password -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-15dp"
+        app:passwordToggleEnabled="true">
+
+        <!-- Title Password -->
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#fff"
+            android:textSize="20dp"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Masukkan UlangPassword -->
+    <TextView
+        android:id="@+id/txtulangpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="30dp"
+        android:text="Masukkan Ulang Password"
+        android:textSize="15dp" />
+
+    <!-- Untuk Menampilkan Hide Password -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-15dp"
+        app:passwordToggleEnabled="true">
+
+        <!-- Title Password -->
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#fff"
+            android:textSize="20dp"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Button Masuk -->
+    <Button
+        android:id="@+id/btnmasuk"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="Daftar"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:onClick="linkdisini"
+        android:textSize="18dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_corner"
+        android:textColorHint="@color/design_default_color_primary_variant"
+        />
+
+    <!-- Biar rapih bersebelahan -->
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <!-- Text Tidak Punya Akun -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lupa password ? "
+            android:textSize="15dp" />
+
+        <!-- Link Daftar -->
+        <TextView
+            android:id="@+id/linkdaftar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset Disini"
+            android:onClick="linkdisini"
+            android:textStyle="bold"
+            android:textColor="@color/purple_700"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <!-- Text Tidak Punya Akun -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sudah Punya Akun ? "
+            android:textSize="15dp" />
+
+        <!-- Link Daftar -->
+        <TextView
+            android:id="@+id/linkdaftar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masuk Disini"
+            android:onClick="kelogin"
+            android:textStyle="bold"
+            android:textColor="@color/purple_700"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
