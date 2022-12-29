@@ -83,7 +83,7 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <!-- Masukkan UlangPassword -->
+    <!-- Masukkan Ulang Password -->
     <TextView
         android:id="@+id/txtulangpassword"
         android:layout_width="match_parent"
@@ -97,15 +97,15 @@
 
     <!-- Untuk Menampilkan Hide Password -->
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tilPassword"
+        android:id="@+id/ulangpassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="-15dp"
         app:passwordToggleEnabled="true">
 
-        <!-- Title Password -->
+        <!-- Title Ulang Password -->
         <EditText
-            android:id="@+id/password"
+            android:id="@+id/ulgpassword"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -115,9 +115,9 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <!-- Button Masuk -->
+    <!-- Button Daftar -->
     <Button
-        android:id="@+id/btnmasuk"
+        android:id="@+id/btndaftar"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:text="Daftar"
@@ -132,23 +132,23 @@
 
     <!-- Biar rapih bersebelahan -->
     <LinearLayout
-        android:id="@+id/LinearLayout1"
+        android:id="@+id/Linear"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:orientation="horizontal">
 
-        <!-- Text Tidak Punya Akun -->
+        <!-- Text Reset -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Lupa password ? "
             android:textSize="15dp" />
 
-        <!-- Link Daftar -->
+        <!-- Link Reset -->
         <TextView
-            android:id="@+id/linkdaftar"
+            android:id="@+id/reset"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Reset Disini"
@@ -167,16 +167,16 @@
         android:layout_marginTop="10dp"
         android:orientation="horizontal">
 
-        <!-- Text Tidak Punya Akun -->
+        <!-- Text Punya Akun -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sudah Punya Akun ? "
             android:textSize="15dp" />
 
-        <!-- Link Daftar -->
+        <!-- Link Masuk -->
         <TextView
-            android:id="@+id/linkdaftar"
+            android:id="@+id/linkmasuk"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Masuk Disini"
